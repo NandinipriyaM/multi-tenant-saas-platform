@@ -1,0 +1,37 @@
+{
+  "testCredentials": {
+    "superAdmin": {
+      "email": "superadmin@system.com",
+      "password": "Admin@123",
+      "description": "Platform-wide access to all tenants and users"
+    },
+    "tenantAdmin": {
+      "email": "admin@demo.com",
+      "password": "Demo@123",
+      "tenantName": "Demo Company",
+      "description": "Administrative access specific to Demo Company"
+    },
+    "regularUsers": [
+      {
+        "email": "user1@demo.com",
+        "password": "User@123",
+        "role": "user",
+        "description": "Standard user within Demo Company"
+      },
+      {
+        "email": "user2@demo.com",
+        "password": "User@123",
+        "role": "user",
+        "description": "Standard user within Demo Company"
+      }
+    ]
+  },
+  "seedDataDetails": {
+    "tenantId": "22222222-2222-2222-2222-222222222222",
+    "projectIds": [
+      "66666666-6666-6666-6666-666666666666",
+      "77777777-7777-7777-7777-777777777777"
+    ],
+    "subdomain": "demo"
+  }
+}
