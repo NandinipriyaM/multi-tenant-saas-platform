@@ -1,13 +1,21 @@
 # multi-tenant-saas-platform
 
-A comprehensive, production-ready SaaS platform with tenant management, user management, project tracking, and task management capabilities. Complete with REST APIs, responsive React UI, PostgreSQL database, and Docker containerization.
+Build a production-ready, multi-tenant SaaS application where multiple organizations
+(tenants) can independently register, manage their teams, create projects, and track
+tasks. The system must ensure complete data isolation between tenants, implement role
+based access control (RBAC), and enforce subscription plan limits. This is a full-stack
+application requiring backend API development, frontend user interface, database design,
+and Docker containerization
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Node](https://img.shields.io/badge/node-18.x-brightgreen.svg)
-![React](https://img.shields.io/badge/react-18.2-blue.svg)
+---
 
-## ✨ Key Features
+## Live Demo
+
+**Deployed URL:**  
+https://infinite-scroll-masonry-gallery-h4v.vercel.app/
+
+---
+##  Key Features
 
 ###  Multi-Tenancy
 
@@ -68,7 +76,7 @@ A comprehensive, production-ready SaaS platform with tenant management, user man
 - Health checks and automatic recovery
 - Production-grade configuration
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -83,7 +91,7 @@ git clone https://github.com/NandinipriyaM/multi-tenant-saas-platform
 cd multi-tenant-saas-platform
 
 # Start all services
-docker-compose up -d
+docker-compose up 
 
 # Wait for services to be healthy
 docker-compose ps
@@ -104,7 +112,7 @@ Login with pre-populated test account:
 
 
 
-## 📚 Documentation
+##  Documentation
 
 ### Core Documentation
 
@@ -116,7 +124,7 @@ Login with pre-populated test account:
 
 
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### Authentication (4 APIs)
 
@@ -194,7 +202,7 @@ GET    /api/health                    System health check
 }
 ```
 
-## 📊 Database Schema
+##  Database Schema
 
 ### Core Tables
 
@@ -242,5 +250,5 @@ GET    /api/health                    System health check
 - UUID primary keys for security
 - Timestamp tracking (created_at, updated_at)
 
-See [Database Schema](docs/technical-spec.md#5-database-schema) for complete details.
+
 
